@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE2419A41F84CBEE00D331B0 /* ken.sms in Resources */ = {isa = PBXBuildFile; fileRef = BE2419A31F84CBEE00D331B0 /* ken.sms */; };
+		BE408B8F1F84D4EE003BAC40 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6455E71F84CAE2009109AB /* libz.tbd */; };
+		BE64555F1F84C8C2009109AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64555E1F84C8C2009109AB /* AppDelegate.m */; };
+		BE6455611F84C8C2009109AB /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6455601F84C8C2009109AB /* art.scnassets */; };
+		BE6455641F84C8C2009109AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE6455631F84C8C2009109AB /* ViewController.m */; };
+		BE6455671F84C8C2009109AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6455651F84C8C2009109AB /* Main.storyboard */; };
+		BE6455691F84C8C2009109AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6455681F84C8C2009109AB /* Assets.xcassets */; };
+		BE64556C1F84C8C2009109AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE64556A1F84C8C2009109AB /* LaunchScreen.storyboard */; };
+		BE64556F1F84C8C2009109AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE64556E1F84C8C2009109AB /* main.m */; };
+		BE6455D01F84CAA0009109AB /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = BE64559C1F84CA6B009109AB /* error.c */; };
+		BE6455D11F84CAA0009109AB /* fileio.c in Sources */ = {isa = PBXBuildFile; fileRef = BE64559E1F84CA6B009109AB /* fileio.c */; };
+		BE6455D21F84CAA0009109AB /* loadrom.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455A11F84CA6B009109AB /* loadrom.c */; };
+		BE6455D31F84CAA0009109AB /* memz80.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455A41F84CA6B009109AB /* memz80.c */; };
+		BE6455D41F84CAA0009109AB /* pio.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455A61F84CA6B009109AB /* pio.c */; };
+		BE6455D51F84CAA0009109AB /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455A81F84CA6B009109AB /* render.c */; };
+		BE6455D61F84CAA0009109AB /* sms.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455AB1F84CA6B009109AB /* sms.c */; };
+		BE6455D71F84CAA0009109AB /* state.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455BC1F84CA6B009109AB /* state.c */; };
+		BE6455D81F84CAA0009109AB /* system.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455BE1F84CA6B009109AB /* system.c */; };
+		BE6455D91F84CAA0009109AB /* tms.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455C01F84CA6B009109AB /* tms.c */; };
+		BE6455DA1F84CAA0009109AB /* vdp.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455C91F84CA6B009109AB /* vdp.c */; };
+		BE6455DB1F84CAA8009109AB /* z80.c in Sources */ = {isa = PBXBuildFile; fileRef = BE64557E1F84CA6B009109AB /* z80.c */; };
+		BE6455DC1F84CAC4009109AB /* emu2413.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455AF1F84CA6B009109AB /* emu2413.c */; };
+		BE6455DD1F84CAC4009109AB /* fmintf.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455B11F84CA6B009109AB /* fmintf.c */; };
+		BE6455DE1F84CAC4009109AB /* sn76489.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455B31F84CA6B009109AB /* sn76489.c */; };
+		BE6455DF1F84CAC4009109AB /* sound.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455B51F84CA6B009109AB /* sound.c */; };
+		BE6455E01F84CAC4009109AB /* stream.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455B71F84CA6B009109AB /* stream.c */; };
+		BE6455E11F84CAC4009109AB /* ym2413.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455BA1F84CA6B009109AB /* ym2413.c */; };
+		BE6455E21F84CACF009109AB /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455C51F84CA6B009109AB /* ioapi.c */; };
+		BE6455E31F84CACF009109AB /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = BE6455C71F84CA6B009109AB /* unzip.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE2419A31F84CBEE00D331B0 /* ken.sms */ = {isa = PBXFileReference; lastKnownFileType = file; path = ken.sms; sourceTree = SOURCE_ROOT; };
+		BE64555A1F84C8C1009109AB /* ARSMSPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARSMSPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE64555D1F84C8C2009109AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE64555E1F84C8C2009109AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE6455601F84C8C2009109AB /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		BE6455621F84C8C2009109AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BE6455631F84C8C2009109AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE6455661F84C8C2009109AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE6455681F84C8C2009109AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE64556B1F84C8C2009109AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE64556D1F84C8C2009109AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE64556E1F84C8C2009109AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE6455791F84CA6B009109AB /* basetsd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basetsd.h; sourceTree = "<group>"; };
+		BE64557B1F84CA6B009109AB /* cpuintrf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cpuintrf.h; sourceTree = "<group>"; };
+		BE64557C1F84CA6B009109AB /* memory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = memory.h; sourceTree = "<group>"; };
+		BE64557D1F84CA6B009109AB /* osd_cpu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = osd_cpu.h; sourceTree = "<group>"; };
+		BE64557E1F84CA6B009109AB /* z80.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = z80.c; sourceTree = "<group>"; };
+		BE64557F1F84CA6B009109AB /* z80.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = z80.h; sourceTree = "<group>"; };
+		BE6455801F84CA6B009109AB /* z80daa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = z80daa.h; sourceTree = "<group>"; };
+		BE64559C1F84CA6B009109AB /* error.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = error.c; sourceTree = "<group>"; };
+		BE64559D1F84CA6B009109AB /* error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		BE64559E1F84CA6B009109AB /* fileio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fileio.c; sourceTree = "<group>"; };
+		BE64559F1F84CA6B009109AB /* fileio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fileio.h; sourceTree = "<group>"; };
+		BE6455A01F84CA6B009109AB /* hvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hvc.h; sourceTree = "<group>"; };
+		BE6455A11F84CA6B009109AB /* loadrom.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = loadrom.c; sourceTree = "<group>"; };
+		BE6455A21F84CA6B009109AB /* loadrom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loadrom.h; sourceTree = "<group>"; };
+		BE6455A31F84CA6B009109AB /* macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		BE6455A41F84CA6B009109AB /* memz80.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = memz80.c; sourceTree = "<group>"; };
+		BE6455A51F84CA6B009109AB /* memz80.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = memz80.h; sourceTree = "<group>"; };
+		BE6455A61F84CA6B009109AB /* pio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pio.c; sourceTree = "<group>"; };
+		BE6455A71F84CA6B009109AB /* pio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pio.h; sourceTree = "<group>"; };
+		BE6455A81F84CA6B009109AB /* render.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = render.c; sourceTree = "<group>"; };
+		BE6455A91F84CA6B009109AB /* render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
+		BE6455AA1F84CA6B009109AB /* shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shared.h; sourceTree = "<group>"; };
+		BE6455AB1F84CA6B009109AB /* sms.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sms.c; sourceTree = "<group>"; };
+		BE6455AC1F84CA6B009109AB /* sms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sms.h; sourceTree = "<group>"; };
+		BE6455AE1F84CA6B009109AB /* 2413tone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 2413tone.h; sourceTree = "<group>"; };
+		BE6455AF1F84CA6B009109AB /* emu2413.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = emu2413.c; sourceTree = "<group>"; };
+		BE6455B01F84CA6B009109AB /* emu2413.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = emu2413.h; sourceTree = "<group>"; };
+		BE6455B11F84CA6B009109AB /* fmintf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fmintf.c; sourceTree = "<group>"; };
+		BE6455B21F84CA6B009109AB /* fmintf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fmintf.h; sourceTree = "<group>"; };
+		BE6455B31F84CA6B009109AB /* sn76489.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sn76489.c; sourceTree = "<group>"; };
+		BE6455B41F84CA6B009109AB /* sn76489.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sn76489.h; sourceTree = "<group>"; };
+		BE6455B51F84CA6B009109AB /* sound.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sound.c; sourceTree = "<group>"; };
+		BE6455B61F84CA6B009109AB /* sound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sound.h; sourceTree = "<group>"; };
+		BE6455B71F84CA6B009109AB /* stream.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stream.c; sourceTree = "<group>"; };
+		BE6455B81F84CA6B009109AB /* stream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stream.h; sourceTree = "<group>"; };
+		BE6455B91F84CA6B009109AB /* vrc7tone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vrc7tone.h; sourceTree = "<group>"; };
+		BE6455BA1F84CA6B009109AB /* ym2413.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ym2413.c; sourceTree = "<group>"; };
+		BE6455BB1F84CA6B009109AB /* ym2413.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ym2413.h; sourceTree = "<group>"; };
+		BE6455BC1F84CA6B009109AB /* state.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = state.c; sourceTree = "<group>"; };
+		BE6455BD1F84CA6B009109AB /* state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = state.h; sourceTree = "<group>"; };
+		BE6455BE1F84CA6B009109AB /* system.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = system.c; sourceTree = "<group>"; };
+		BE6455BF1F84CA6B009109AB /* system.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
+		BE6455C01F84CA6B009109AB /* tms.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tms.c; sourceTree = "<group>"; };
+		BE6455C11F84CA6B009109AB /* tms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tms.h; sourceTree = "<group>"; };
+		BE6455C21F84CA6B009109AB /* types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		BE6455C41F84CA6B009109AB /* crypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		BE6455C51F84CA6B009109AB /* ioapi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		BE6455C61F84CA6B009109AB /* ioapi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		BE6455C71F84CA6B009109AB /* unzip.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		BE6455C81F84CA6B009109AB /* unzip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		BE6455C91F84CA6B009109AB /* vdp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vdp.c; sourceTree = "<group>"; };
+		BE6455CA1F84CA6B009109AB /* vdp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vdp.h; sourceTree = "<group>"; };
+		BE6455E51F84CADE009109AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BE6455E71F84CAE2009109AB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE6455571F84C8C1009109AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE408B8F1F84D4EE003BAC40 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE6455511F84C8C1009109AB = {
+			isa = PBXGroup;
+			children = (
+				BE64555C1F84C8C1009109AB /* ARSMSPlus */,
+				BE64555B1F84C8C1009109AB /* Products */,
+				BE6455E41F84CADD009109AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE64555B1F84C8C1009109AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE64555A1F84C8C1009109AB /* ARSMSPlus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE64555C1F84C8C1009109AB /* ARSMSPlus */ = {
+			isa = PBXGroup;
+			children = (
+				BE2419A31F84CBEE00D331B0 /* ken.sms */,
+				BE6455781F84CA6B009109AB /* smsplus-src-1.3 */,
+				BE64555D1F84C8C2009109AB /* AppDelegate.h */,
+				BE64555E1F84C8C2009109AB /* AppDelegate.m */,
+				BE6455601F84C8C2009109AB /* art.scnassets */,
+				BE6455621F84C8C2009109AB /* ViewController.h */,
+				BE6455631F84C8C2009109AB /* ViewController.m */,
+				BE6455651F84C8C2009109AB /* Main.storyboard */,
+				BE6455681F84C8C2009109AB /* Assets.xcassets */,
+				BE64556A1F84C8C2009109AB /* LaunchScreen.storyboard */,
+				BE64556D1F84C8C2009109AB /* Info.plist */,
+				BE64556E1F84C8C2009109AB /* main.m */,
+			);
+			path = ARSMSPlus;
+			sourceTree = "<group>";
+		};
+		BE6455781F84CA6B009109AB /* smsplus-src-1.3 */ = {
+			isa = PBXGroup;
+			children = (
+				BE6455CF1F84CA70009109AB /* include */,
+				BE64557A1F84CA6B009109AB /* cpu */,
+				BE6455AD1F84CA6B009109AB /* sound */,
+				BE6455C31F84CA6B009109AB /* unzip */,
+				BE64559C1F84CA6B009109AB /* error.c */,
+				BE64559E1F84CA6B009109AB /* fileio.c */,
+				BE6455A11F84CA6B009109AB /* loadrom.c */,
+				BE6455A41F84CA6B009109AB /* memz80.c */,
+				BE6455A61F84CA6B009109AB /* pio.c */,
+				BE6455A81F84CA6B009109AB /* render.c */,
+				BE6455AB1F84CA6B009109AB /* sms.c */,
+				BE6455BC1F84CA6B009109AB /* state.c */,
+				BE6455BE1F84CA6B009109AB /* system.c */,
+				BE6455C01F84CA6B009109AB /* tms.c */,
+				BE6455C91F84CA6B009109AB /* vdp.c */,
+			);
+			path = "smsplus-src-1.3";
+			sourceTree = SOURCE_ROOT;
+		};
+		BE64557A1F84CA6B009109AB /* cpu */ = {
+			isa = PBXGroup;
+			children = (
+				BE64557B1F84CA6B009109AB /* cpuintrf.h */,
+				BE64557C1F84CA6B009109AB /* memory.h */,
+				BE64557D1F84CA6B009109AB /* osd_cpu.h */,
+				BE64557E1F84CA6B009109AB /* z80.c */,
+				BE64557F1F84CA6B009109AB /* z80.h */,
+				BE6455801F84CA6B009109AB /* z80daa.h */,
+			);
+			path = cpu;
+			sourceTree = "<group>";
+		};
+		BE6455AD1F84CA6B009109AB /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				BE6455AE1F84CA6B009109AB /* 2413tone.h */,
+				BE6455B01F84CA6B009109AB /* emu2413.h */,
+				BE6455B21F84CA6B009109AB /* fmintf.h */,
+				BE6455B41F84CA6B009109AB /* sn76489.h */,
+				BE6455B61F84CA6B009109AB /* sound.h */,
+				BE6455B81F84CA6B009109AB /* stream.h */,
+				BE6455B91F84CA6B009109AB /* vrc7tone.h */,
+				BE6455BB1F84CA6B009109AB /* ym2413.h */,
+				BE6455AF1F84CA6B009109AB /* emu2413.c */,
+				BE6455B11F84CA6B009109AB /* fmintf.c */,
+				BE6455B31F84CA6B009109AB /* sn76489.c */,
+				BE6455B51F84CA6B009109AB /* sound.c */,
+				BE6455B71F84CA6B009109AB /* stream.c */,
+				BE6455BA1F84CA6B009109AB /* ym2413.c */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
+		BE6455C31F84CA6B009109AB /* unzip */ = {
+			isa = PBXGroup;
+			children = (
+				BE6455C41F84CA6B009109AB /* crypt.h */,
+				BE6455C61F84CA6B009109AB /* ioapi.h */,
+				BE6455C81F84CA6B009109AB /* unzip.h */,
+				BE6455C51F84CA6B009109AB /* ioapi.c */,
+				BE6455C71F84CA6B009109AB /* unzip.c */,
+			);
+			path = unzip;
+			sourceTree = "<group>";
+		};
+		BE6455CF1F84CA70009109AB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BE6455BD1F84CA6B009109AB /* state.h */,
+				BE6455BF1F84CA6B009109AB /* system.h */,
+				BE6455C11F84CA6B009109AB /* tms.h */,
+				BE6455C21F84CA6B009109AB /* types.h */,
+				BE6455CA1F84CA6B009109AB /* vdp.h */,
+				BE64559F1F84CA6B009109AB /* fileio.h */,
+				BE6455A01F84CA6B009109AB /* hvc.h */,
+				BE6455A21F84CA6B009109AB /* loadrom.h */,
+				BE6455A31F84CA6B009109AB /* macros.h */,
+				BE6455A51F84CA6B009109AB /* memz80.h */,
+				BE6455A71F84CA6B009109AB /* pio.h */,
+				BE6455A91F84CA6B009109AB /* render.h */,
+				BE6455AA1F84CA6B009109AB /* shared.h */,
+				BE6455AC1F84CA6B009109AB /* sms.h */,
+				BE6455791F84CA6B009109AB /* basetsd.h */,
+				BE64559D1F84CA6B009109AB /* error.h */,
+			);
+			path = include;
+			sourceTree = SOURCE_ROOT;
+		};
+		BE6455E41F84CADD009109AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE6455E71F84CAE2009109AB /* libz.tbd */,
+				BE6455E51F84CADE009109AB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE6455591F84C8C1009109AB /* ARSMSPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE6455721F84C8C2009109AB /* Build configuration list for PBXNativeTarget "ARSMSPlus" */;
+			buildPhases = (
+				BE6455561F84C8C1009109AB /* Sources */,
+				BE6455571F84C8C1009109AB /* Frameworks */,
+				BE6455581F84C8C1009109AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARSMSPlus;
+			productName = artest2;
+			productReference = BE64555A1F84C8C1009109AB /* ARSMSPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE6455521F84C8C1009109AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = picmeapp;
+				TargetAttributes = {
+					BE6455591F84C8C1009109AB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BE6455551F84C8C1009109AB /* Build configuration list for PBXProject "ARSMSPlus" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE6455511F84C8C1009109AB;
+			productRefGroup = BE64555B1F84C8C1009109AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE6455591F84C8C1009109AB /* ARSMSPlus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE6455581F84C8C1009109AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6455611F84C8C2009109AB /* art.scnassets in Resources */,
+				BE64556C1F84C8C2009109AB /* LaunchScreen.storyboard in Resources */,
+				BE6455691F84C8C2009109AB /* Assets.xcassets in Resources */,
+				BE6455671F84C8C2009109AB /* Main.storyboard in Resources */,
+				BE2419A41F84CBEE00D331B0 /* ken.sms in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE6455561F84C8C1009109AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6455641F84C8C2009109AB /* ViewController.m in Sources */,
+				BE64556F1F84C8C2009109AB /* main.m in Sources */,
+				BE64555F1F84C8C2009109AB /* AppDelegate.m in Sources */,
+				BE6455D01F84CAA0009109AB /* error.c in Sources */,
+				BE6455D11F84CAA0009109AB /* fileio.c in Sources */,
+				BE6455D21F84CAA0009109AB /* loadrom.c in Sources */,
+				BE6455D31F84CAA0009109AB /* memz80.c in Sources */,
+				BE6455D41F84CAA0009109AB /* pio.c in Sources */,
+				BE6455D51F84CAA0009109AB /* render.c in Sources */,
+				BE6455D61F84CAA0009109AB /* sms.c in Sources */,
+				BE6455D71F84CAA0009109AB /* state.c in Sources */,
+				BE6455D81F84CAA0009109AB /* system.c in Sources */,
+				BE6455D91F84CAA0009109AB /* tms.c in Sources */,
+				BE6455DA1F84CAA0009109AB /* vdp.c in Sources */,
+				BE6455DB1F84CAA8009109AB /* z80.c in Sources */,
+				BE6455DC1F84CAC4009109AB /* emu2413.c in Sources */,
+				BE6455DD1F84CAC4009109AB /* fmintf.c in Sources */,
+				BE6455DE1F84CAC4009109AB /* sn76489.c in Sources */,
+				BE6455DF1F84CAC4009109AB /* sound.c in Sources */,
+				BE6455E01F84CAC4009109AB /* stream.c in Sources */,
+				BE6455E11F84CAC4009109AB /* ym2413.c in Sources */,
+				BE6455E21F84CACF009109AB /* ioapi.c in Sources */,
+				BE6455E31F84CACF009109AB /* unzip.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE6455651F84C8C2009109AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE6455661F84C8C2009109AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE64556A1F84C8C2009109AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE64556B1F84C8C2009109AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE6455701F84C8C2009109AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE6455711F84C8C2009109AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE6455731F84C8C2009109AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GR7J6F648G;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					LSB_FIRST,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ARSMSPlus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maestun.arsmsplus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE6455741F84C8C2009109AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GR7J6F648G;
+				GCC_PREPROCESSOR_DEFINITIONS = LSB_FIRST;
+				INFOPLIST_FILE = ARSMSPlus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maestun.arsmsplus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE6455551F84C8C1009109AB /* Build configuration list for PBXProject "ARSMSPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6455701F84C8C2009109AB /* Debug */,
+				BE6455711F84C8C2009109AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE6455721F84C8C2009109AB /* Build configuration list for PBXNativeTarget "ARSMSPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE6455731F84C8C2009109AB /* Debug */,
+				BE6455741F84C8C2009109AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE6455521F84C8C1009109AB /* Project object */;
+}
